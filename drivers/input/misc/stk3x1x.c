@@ -307,7 +307,7 @@ inline uint32_t stk_alscode2lux(struct stk3x1x_data *ps_data, uint32_t alscode)
 	alscode += ((alscode<<7) + (alscode<<3) + (alscode>>1));
 	alscode <<= 3;
 	alscode /= ps_data->als_transmittance;
-	    return alscode*30;
+	    return alscode*60;
 
 }
 
